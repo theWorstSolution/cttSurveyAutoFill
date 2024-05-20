@@ -1,0 +1,19 @@
+{
+    "name": "Ctt-sis Survey auto fill",
+    "version": "1.0.0",
+    "description": "Automaticlly fill survey in ctt-sis website",
+    "manifest_version": 3,
+    "author": "Nguyen Chi Thanh",
+    "content_scripts": [
+        {
+          "matches": ["https://ctt-sis.hust.edu.vn/Surveys/dghp.aspx"],
+          
+          "js": ["script.js"]
+          
+        }
+      ],
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Ctt-sis Survey auto fill"
+    }
+}
